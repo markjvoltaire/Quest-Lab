@@ -1,13 +1,13 @@
 import seasons from './Data/season-data.js';
 
 /// function to find the ids
-export function findById(item, id){
-    for (let item of items){
-        if (item.id === id){
-            return item;
-        }
-    }
-}
+//export function findById(item, id){
+  //  for (let item of items){
+     //   if (item.id === id){
+      //      return item;
+   //     }
+   // }
+//}
 
 
 export function generateUser(formData){

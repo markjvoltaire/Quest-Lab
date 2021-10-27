@@ -30,12 +30,12 @@ function displayLink(season){
 
 
 
-for (let seasons of season){
-    if (player1.completed[season.id]){
+//for (let seasons of season){
+if (player1.completed[season.id]){
         
-        displaySpan(season);
-    } else {
-        displayLink(season);
+    displaySpan(season);
+} else {
+    displayLink(season);
         
-    }
 }
+
