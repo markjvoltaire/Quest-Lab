@@ -9,33 +9,29 @@ const player1 = getUser();
 
 
 
-function displaySpan(season){
+for (let seasons of season){
+    if (player1.completed[season.id]){
+        
+        displaySpan(seasons);
+    } else {
+        displayLink(seasons);
+        
+    }
+}
+function displaySpan(seasons){
     const span = document.createElement('span');
-    span.textContent = season.title;
+    span.textContent = seasons.title;
     maps.appendChild(span);
 }
 
 
-function displayLink(season){
+function displayLink(seasons){
     const a = document.createElement('a');
-    a.href = `../maps/?id=${season.id}`;
-    a.textContent = season.title;
+    a.href = `../season/?id=${seasons.id}`;
+    a.textContent = seasons.title;
 
     maps.appendChild(a);
 }
 
 
-
-
-
-
-
-//for (let seasons of season){
-if (player1.completed[season.id]){
-        
-    displaySpan(season);
-} else {
-    displayLink(season);
-        
-}
-
+console.log();
