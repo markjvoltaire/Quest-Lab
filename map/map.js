@@ -34,6 +34,9 @@ function displaySpan(seasons){
 function displayLink(seasons){
     const a = document.createElement('a');
     a.classList.add('seasons');
+
+    
+    
     a.href = `../season/?id=${seasons.id}`;
     a.textContent = seasons.title;
     

@@ -4,8 +4,8 @@ const liverpool = {
     id: 'liverpool',
     title: 'Battle At Anfield',
     Map: {
-        top: '89%',
-        left: '50%'
+        top: '25%', 
+        left: '15%'
     },
 
     image: 'liverpool.jpeg',
