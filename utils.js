@@ -23,6 +23,8 @@ export function generateUser(formData){
     
 }
 
+
+
 // Set the user into Local Storage
 export function setUser(userObject){
     const userString = JSON.stringify(userObject);

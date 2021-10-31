@@ -4,5 +4,22 @@ width: 100px;
 height: 100px;
 }
 
+body{
+background-image: url(../players/champions-league-stadium.jpeg)
+}
 
 
+h2{
+    color: white;
+    font-family: 'Exo', sans-serif;
+
+    text-align: center;
+
+
+    font-size: 60px;
+}
+
+#coach-info{
+    font-family: 'Exo', sans-serif; 
+    color: white; 
+}

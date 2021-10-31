@@ -2,15 +2,21 @@
 //import { getUser } from '../utils.js';
 
 import season from '../Data/season-data.js';
-import { getUser } from '../utils.js';
+import { getUser, seasonCompleted } from '../utils.js';
 
 const maps = document.getElementById('maps');
-const player1 = getUser();
+
+
+let user = getUser();
+
+if (user.happiness <= 0 || seasonCompleted(user)){
+    window.location.replace('../gameover');
+}
 
 
 
 for (let seasons of season){
-    if (player1.completed[season.id]){
+    if (user.completed[seasons.id]){
         
         displaySpan(seasons);
     } else {
@@ -27,11 +33,12 @@ function displaySpan(seasons){
 
 function displayLink(seasons){
     const a = document.createElement('a');
+    a.classList.add('seasons');
     a.href = `../season/?id=${seasons.id}`;
     a.textContent = seasons.title;
+    
 
     maps.appendChild(a);
 }
 
 
-console.log();

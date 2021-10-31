@@ -1,12 +1,11 @@
 import season from '../Data/season-data.js';
-import { getUser, findById, careerTrack } from '../utils.js';
+import { getUser, findById, careerTrack, setUser } from '../utils.js';
 
 
 const params = new URLSearchParams(window.location.search);
 
 const seasonData = findById(season, params.get('id'));
 
-console.log(seasonData);
 
 
 const title = document.getElementById('season-title');
@@ -49,15 +48,15 @@ seasonChoices.addEventListener('submit', (e)=>{
     //   update the gold, hp, completed
     careerTrack(choice, seasonData.id, user);
     // reset to localstorage (setUser)
-    //setUser(user);
+    setUser(user);
     
     // display the result
     // display a link to go back to the map
-    const seasonDetails = document.getElementById('season-details');
-    seasonDetails.classList.add('hidden');
+    //const seasonDetails = document.getElementById('season-details');
+    seasonChoices.classList.add('hidden');
     const seasonResults = document.getElementById('results');
     const seasonParagraph = document.createElement('p');
-    seasonParagraph.textContent = careerTrack.result;
+    seasonParagraph.textContent = choice.result;
     const backLink = document.createElement('a');
     backLink.href = '../map';
     backLink.textContent = 'Back to Map';
@@ -66,5 +65,8 @@ seasonChoices.addEventListener('submit', (e)=>{
 
     seasonResults.classList.remove('hidden');
 
+    
+
 });
+
 

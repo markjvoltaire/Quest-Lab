@@ -33,7 +33,7 @@ const liverpool = {
 
             id: 'Middle',
             description: 'Kick down the middle',
-            results: `blockkkkkked`,
+            result: `blockkkkkked`,
             happiness: -40,
             gameCheck: 50,
                 
@@ -73,7 +73,7 @@ const bayern = {
 
             id: 'Middle',
             description: 'Kick down the middle',
-            results: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL`,
+            result: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL`,
             happiness: 80,
             gameCheck: 100,
                 
@@ -112,7 +112,7 @@ const barcelona = {
 
             id: 'Middle',
             description: 'Kick down the middle',
-            results: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL`,
+            result: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL`,
             happiness: 80,
             gameCheck: 100,
                 
@@ -128,12 +128,12 @@ const barcelona = {
 
 
 
-const season = [
+const seasons = [
     liverpool,
     bayern,
     barcelona,
 ];
 
-export default season; 
+export default seasons; 
 
 

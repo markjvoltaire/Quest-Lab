@@ -1,0 +1,27 @@
+h1 {
+    
+    font-family: 'Exo', sans-serif;
+    color: white;
+}
+
+
+body{
+    background-image: url(../players/champions-league-stadium.jpeg)
+}
+
+#team-map{
+    padding-top: 40px;
+}
+
+#maps{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../players/map.jpeg);
+
+    width: auto;
+    height: auto;
+    
+    position: relative;
+}
+
+
