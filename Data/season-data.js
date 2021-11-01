@@ -4,8 +4,8 @@ const liverpool = {
     id: 'liverpool',
     title: 'Battle At Anfield',
     map: {
-        top: '64%', 
-        right: '52%'
+        top: '61%', 
+        right: '36%'
     },
 
     image: 'liverpool.jpeg',
@@ -46,8 +46,8 @@ const bayern = {
     id: 'bayern',
     title: 'Champions Leauge Showdown',
     map: {
-        top: '75%',
-        left: '45%'
+        top: '72%',
+        left: '60%'
     },
 
     image: 'bayern.jpeg',
@@ -86,8 +86,8 @@ const barcelona = {
     id: 'barcelona',
     title: 'Shootout in spain',
     map: {
-        top: '87%',
-        left: '43%',
+        top: '86%',
+        left: '59%',
         
     },
 
