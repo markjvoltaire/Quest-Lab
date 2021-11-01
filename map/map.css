@@ -6,11 +6,15 @@ h1 {
 
 
 body{
-    background-image: url(../players/champions-league-stadium.jpeg)
+    background-image: url(../players/champions-league-stadium.jpeg);
+    position: relative;
+    margin: auto;
 }
 
-#team-map{
-
+.team-map{
+padding-left: 597px;
+    
+    
 }
 
 #maps{
@@ -18,6 +22,11 @@ body{
 
     display: flex; 
     flex-direction: column; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: fit-content;
+    
+    
 }
     
     
@@ -25,14 +34,20 @@ body{
     
 
 a{
-    color: yellow;
+    color: rgb(245, 237, 8);
     display: flex;
     flex-direction: column;
-    padding: 60px;
+  
     position: absolute;
     background-size: cover;
-  
+    font-size: 0.8rem;
+  text-decoration: underline;
+  position: absolute;
    
-    margin: 50px;
+    
+}
+
+.game{
+    position: absolute;
 }
 

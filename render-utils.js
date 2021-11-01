@@ -8,12 +8,8 @@ export function loadProfile(){
 
     img.src = `../players/${user.player}.png`;
 
-    const name = document.getElementById('user-name');
-
-
-
-
-
+    //const name = document.getElementById('user-name');
 
 }
 
+loadProfile();

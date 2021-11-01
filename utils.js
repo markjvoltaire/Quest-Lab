@@ -1,4 +1,5 @@
 import seasons from './Data/season-data.js';
+//import getUser from "./render-utils.js";
 
  //function to find the ids
 export function findById(items, id){
@@ -8,6 +9,8 @@ export function findById(items, id){
         }
     }
 }
+
+//const user = getUser();
 
 
 export function generateUser(formData){
@@ -37,10 +40,10 @@ export function getUser(){
     return JSON.parse(userString);
 }
 
-export function careerTrack(choiceObject, questId, userObject){
+export function careerTrack(choiceObject, seasonsId, userObject){
     userObject.happiness += choiceObject.happiness;
-    userObject.gameCheck += choiceObject.happiness;
-    userObject.completed[questId] = true;
+    userObject.gameCheck += choiceObject.gameCheck;
+    userObject.completed[seasonsId] = true;
 }
 
 export function seasonCompleted(userObject){

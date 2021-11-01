@@ -3,9 +3,9 @@
 const liverpool = {
     id: 'liverpool',
     title: 'Battle At Anfield',
-    Map: {
-        top: '25%', 
-        left: '15%'
+    map: {
+        top: '64%', 
+        right: '52%'
     },
 
     image: 'liverpool.jpeg',
@@ -18,14 +18,14 @@ const liverpool = {
             id: 'Top Right',
             description: 'Kick to the right',
             result: ` During your kick you slipped and the ball hit the cross bar resulting in a miss
-        the match ended in a draw.
+        the match ended in a draw. -40 happiness, and -100 gamecheck
         `,
             happiness: -40,
-            gameCheck: 100,
+            gameCheck: -100,
         }, {
             id: 'Bottom Left',
             description: 'Kick to the bottom left',
-            result: `GOOOOOOOOOOOOOAAAAAAAAAAAAAALLLLLLLLLL`,
+            result: `GOOOOOOOOOOOOOAAAAAAAAAAAAAALLLLLLLLLL! + 100 happiness and + 100 gamecheck`,
             happiness: 100,
             gameCheck: 250,
 
@@ -33,7 +33,7 @@ const liverpool = {
 
             id: 'Middle',
             description: 'Kick down the middle',
-            result: `blockkkkkked`,
+            result: `blockkkkkked! -40 happiness and -40 gamecheck`,
             happiness: -40,
             gameCheck: 50,
                 
@@ -45,9 +45,9 @@ const liverpool = {
 const bayern = {
     id: 'bayern',
     title: 'Champions Leauge Showdown',
-    Map: {
-        top: '89%',
-        left: '50%'
+    map: {
+        top: '75%',
+        left: '45%'
     },
 
     image: 'bayern.jpeg',
@@ -58,14 +58,14 @@ const bayern = {
         {
             id: 'Top Left',
             description: 'Kick to the top left',
-            result: ` You missed and the balled hit a camera man.
+            result: ` You missed and the balled hit a camera man. -50 happiness and -85 gamecheck
         `,
             happiness: -50,
             gameCheck: -85,
         }, {
             id: 'Bottom Right',
             description: 'Kick to the bottom Right',
-            result: `Blocked by the goal keeper!`,
+            result: `Blocked by the goal keeper! -20 happiness and -50 gamecheck`,
             happiness: -20,
             gameCheck: -50,
 
@@ -73,7 +73,7 @@ const bayern = {
 
             id: 'Middle',
             description: 'Kick down the middle',
-            result: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL`,
+            result: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL! +80 happinesss and +100 gamecheck`,
             happiness: 80,
             gameCheck: 100,
                 
@@ -85,9 +85,10 @@ const bayern = {
 const barcelona = {
     id: 'barcelona',
     title: 'Shootout in spain',
-    Map: {
-        top: '89%',
-        left: '50%'
+    map: {
+        top: '87%',
+        left: '43%',
+        
     },
 
     image: 'barcelona.jpeg',
@@ -97,14 +98,14 @@ const barcelona = {
         {
             id: 'Bottom Left',
             description: 'Kick to the bottom left',
-            result: ` GOOOOOOOOOOOOOAAAAAAAAALLLLLLLLLLLL!!!!!!!
+            result: ` GOOOOOOOOOOOOOAAAAAAAAALLLLLLLLLLLL!!!!!!! +100 happiness and +250 gamecheck
         `,
             happiness: 100,
             gameCheck: 250,
         }, {
             id: 'Bottom Right',
             description: 'Kick to the bottom Right',
-            result: `Blocked by the goal keeper!`,
+            result: `Blocked by the goal keeper! -20 happiness and -50 gamecheck`,
             happiness: -20,
             gameCheck: -50,
 
@@ -112,7 +113,7 @@ const barcelona = {
 
             id: 'Middle',
             description: 'Kick down the middle',
-            result: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL`,
+            result: `GOOOOOOOOOOOAAAAAAAAAAALLLLLL! +80 happiness and +100 gamecheck`,
             happiness: 80,
             gameCheck: 100,
                 

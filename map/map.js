@@ -27,18 +27,24 @@ for (let seasons of season){
 function displaySpan(seasons){
     const span = document.createElement('span');
     span.textContent = seasons.title;
+    span.classList.add('tag');
+    span.style.top = seasons.map.top;
+    span.style.left = seasons.map.left;
     maps.appendChild(span);
 }
 
 
 function displayLink(seasons){
     const a = document.createElement('a');
-    a.classList.add('seasons');
-
-    
-    
     a.href = `../season/?id=${seasons.id}`;
+    a.classList.add('game');
     a.textContent = seasons.title;
+
+    a.style.top = seasons.map.top;
+    a.style.left = seasons.map.left;
+    a.style.right = seasons.map.right;
+    
+    
     
 
     maps.appendChild(a);
